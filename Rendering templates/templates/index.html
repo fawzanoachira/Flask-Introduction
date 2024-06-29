@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Flask</title>
+</head>
+
+<body>
+  <h2>Welcome To Flask Introduction</h2>
+  <h4>Flask: Rendering Templates</h4>
+  <a href="{{ url_for('home') }}">Home</a>
+  <a href="{{ url_for('hello_world') }}">Index</a>
+  <a href="{{ url_for('about') }}">About</a>
+  <!-- this section can be replaced by a child document -->
+  {% block body %}
+
+
+  <p>This is a Flask application.</p>
+
+
+  {% endblock %}
+</body>
+
+</html>
